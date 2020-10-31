@@ -2,3 +2,7 @@
 *.vcxproj.filters
 *.sln
 *.vscode
+CMakeCache.txt
+*.cmake
+./x64/
+*.dir
