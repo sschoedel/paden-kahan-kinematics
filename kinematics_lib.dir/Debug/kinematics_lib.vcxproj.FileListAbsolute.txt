@@ -1,2 +1,0 @@
-C:\Users\Sam Schoedel\Desktop\git\paden-kahan-6dof-IK\Debug\kinematics_lib.pdb
-C:\Users\Sam Schoedel\Desktop\git\paden-kahan-6dof-IK\kinematics_lib.dir\Debug\kinematics_lib.pdb
