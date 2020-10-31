@@ -1,6 +1,6 @@
-^C:\USERS\SAM SCHOEDEL\DESKTOP\GIT\PADEN-KAHAN-6DOF-IK\CMAKEFILES\27E47387F83E14F9195901B2205F780C\GENERATE.STAMP.RULE
+^C:\USERS\SESCH\DESKTOP\GITHUB\PADEN-KAHAN-KINEMATICS\CMAKEFILES\F101AAE09247F33B9C5379C3F6DAC97A\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Sam Schoedel/Desktop/git/paden-kahan-6dof-IK" "-BC:/Users/Sam Schoedel/Desktop/git/paden-kahan-6dof-IK" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Sam Schoedel/Desktop/git/paden-kahan-6dof-IK/KINEMATICS.sln"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sesch/Desktop/GitHub/paden-kahan-kinematics -BC:/Users/sesch/Desktop/GitHub/paden-kahan-kinematics --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/sesch/Desktop/GitHub/paden-kahan-kinematics/KINEMATICS.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

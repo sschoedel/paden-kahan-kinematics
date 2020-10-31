@@ -1,6 +1,6 @@
-^C:\USERS\SAM SCHOEDEL\DESKTOP\GIT\PADEN-KAHAN-6DOF-IK\CMAKELISTS.TXT
+^C:\USERS\SESCH\DESKTOP\GITHUB\PADEN-KAHAN-KINEMATICS\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Sam Schoedel/Desktop/git/paden-kahan-6dof-IK" "-BC:/Users/Sam Schoedel/Desktop/git/paden-kahan-6dof-IK" --check-stamp-file "C:/Users/Sam Schoedel/Desktop/git/paden-kahan-6dof-IK/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sesch/Desktop/GitHub/paden-kahan-kinematics -BC:/Users/sesch/Desktop/GitHub/paden-kahan-kinematics --check-stamp-file C:/Users/sesch/Desktop/GitHub/paden-kahan-kinematics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

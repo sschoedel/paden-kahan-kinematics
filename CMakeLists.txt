@@ -3,7 +3,10 @@ project(KINEMATICS)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories (kinematics)
+include_directories (
+    kinematics
+    Eigen
+)
 
 add_executable (6dofArm arm.cpp)
 

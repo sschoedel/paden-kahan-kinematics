@@ -2,8 +2,8 @@
 #define KINEMATICS_H
 
 #include <vector>
-#include <Eigen/Core>
-#include <Eigen/Geometry>
+#include <../Eigen/Core>
+#include <../Eigen/Geometry>
 
 using Eigen::MatrixXf;
 

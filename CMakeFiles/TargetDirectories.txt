@@ -1,4 +1,4 @@
-C:/Users/Sam Schoedel/Desktop/git/paden-kahan-6dof-IK/CMakeFiles/6dofArm.dir
-C:/Users/Sam Schoedel/Desktop/git/paden-kahan-6dof-IK/CMakeFiles/kinematics_lib.dir
-C:/Users/Sam Schoedel/Desktop/git/paden-kahan-6dof-IK/CMakeFiles/ALL_BUILD.dir
-C:/Users/Sam Schoedel/Desktop/git/paden-kahan-6dof-IK/CMakeFiles/ZERO_CHECK.dir
+C:/Users/sesch/Desktop/GitHub/paden-kahan-kinematics/CMakeFiles/6dofArm.dir
+C:/Users/sesch/Desktop/GitHub/paden-kahan-kinematics/CMakeFiles/kinematics_lib.dir
+C:/Users/sesch/Desktop/GitHub/paden-kahan-kinematics/CMakeFiles/ALL_BUILD.dir
+C:/Users/sesch/Desktop/GitHub/paden-kahan-kinematics/CMakeFiles/ZERO_CHECK.dir
