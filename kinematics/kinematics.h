@@ -2,30 +2,51 @@
 #define KINEMATICS_H
 
 #include <vector>
+#include <iostream>
+#include <cmath>
 #include <../Eigen/Core>
 #include <../Eigen/Geometry>
 
 using Eigen::MatrixXf;
+using Eigen::Matrix3f;
+using Eigen::Matrix4f;
+using Eigen::VectorXf;
+using Eigen::Quaternionf;
 
-class kinematics
+class Kinematics
 {
 private:
-    float defaultLinkLen = (float)0.1;
-    float defaultLinkOffset = (float)0.0;
-    std::vector<float> desEndPosOri;
-    std::vector<float> curEndPosOri;
-    std::vector<float> homeThetas;  // In radians
-    std::vector<float> curThetas;   // In radians
-    std::vector<float> desThetas;   // In Radians
-    std::vector< std::vector<float> > allDesThetas; // All possible solutions to IK
+    int numJoints;
+    Matrix4f desEndPosOri;
+    Matrix4f curEndPosOri;
+    VectorXf homeThetas;  // In radians
+    VectorXf curThetas;   // In radians
+    VectorXf desThetas;   // In Radians
+    std::vector< VectorXf > allDesThetas; // All possible solutions to IK
     std::vector<float> aOff;        // In meters
     std::vector<float> dOff;        // In meters
-public:
-    kinematics();
-    kinematics(std::vector<float> aOff, std::vector<float> dOff, std::vector<float> homeThetas);
 
-    std::vector<float> solveForwardKinematics(std::vector<float> inputThetas);
-    std::vector< std::vector<float> > solveInverseKinematics(std::vector<float> inputEndPosOri);
+    // Screw parameters
+    std::vector<VectorXf> screwVectors;
+    std::vector<VectorXf> screwPoints;
+    std::vector<VectorXf> screwTwists;
+    
+    Matrix4f solve6DofFK(VectorXf inputEndPosOri);
+    std::vector< VectorXf > solve6DofIK(Matrix4f inputEndPosOri);
+
+    Matrix4f solve7DofFK(VectorXf inputEndPosOri);
+    std::vector< VectorXf > solve7DofIK(Matrix4f inputEndPosOri);
+public:
+    Kinematics();
+    Kinematics(std::vector<float> aOff, std::vector<float> dOff, VectorXf homeThetas);
+
+    Matrix4f solveForwardKinematics(VectorXf inputEndPosOri);
+    std::vector< VectorXf > solveInverseKinematics(Matrix4f inputEndPosOri);
+
+    VectorXf chooseOptimalSolution(std::vector< VectorXf > allDesThetas);
+
+    void printJointAngles();
+    void printEndPosOri();
 };
 
 #endif // KINEMATICS_H
